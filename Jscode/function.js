@@ -95,3 +95,35 @@ function loginUserMessage (username = "sam"){
 
 }
 console.log(loginUserMessage("raj"))
+
+function reverseString (str) {               // interview questions
+  let reversed = "";
+  for (let i = str.length - 1; i>=0; i--) {
+    reversed += str[i];
+  }
+  return reversed;
+}
+console.log(reverseString("JavaScript"))
+
+function checkAge(age) {
+  if(age < 13) {
+    console.log("child");
+
+  }
+  else if(age>=13 && age < 20) {
+    console.log("Teenager");
+
+  }
+  else if(age>=20 && age < 60) {
+    console.log("Adult")
+
+  }
+  else {
+    console.log("Senior Citizen");
+  }
+}
+
+checkAge(10);
+checkAge(20);
+checkAge(45);
+checkAge(67);
